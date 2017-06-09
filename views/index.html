@@ -1,0 +1,35 @@
+<!HTML doctype>
+<html>
+  <head>
+    <link rel="icon" type="image/png" href="https://cdn.glitch.com/ae6e9ccd-a596-4fb9-b2df-e3645a44ce5b%2Fseo3-100-512.png?1496925353384" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">        
+    <link href="https://fonts.googleapis.com/css?family=Rokkitt:400,700|Open+Sans:300,400,600" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css">
+  </head>
+  <script src="app.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+<body>
+<div class="container">
+            <div class="content" ng-controller="taskController">
+            <h1>Haz tu plan | Log in</h1>
+            <p class="tagline">App para hacer planes</p>
+            <form ng-app="myApp" action="/dashboard" method="GET">
+                   <div class="inputContainer">
+                    <input type="text" id="mail" class="taskMail" placeholder="@user" ng-model="user">
+                    <label for="description">User</label>
+                </div>
+                <div class="inputContainer">
+                    <input type="password" id="pass" class="taskPass" placeholder="Password" ng-model="password">
+                    <label for="description">Password</label>
+                </div>
+                <div class="row">
+                    <button class="taskAdd" ng-click="addNew()"><i class="fa fa-sign-in"></i> Log in</button>
+                </div>                    
+            </form>
+            </div><!-- content -->  
+ </div><!-- container -->
+    <footer>
+      <p>Built by <a href="http://www.williamkhepri.me">William Khepri</a></p> 
+    </footer>
+  </body>
+</html>
